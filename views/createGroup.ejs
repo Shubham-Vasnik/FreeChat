@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="container create-group-container">
+    <h1>Create A New Group</h1>
+    <form action="/groups/create" method="post" class="create-group-form">
+        <div class="form-group">
+            <label for="groupname">Group Name</label>
+            <input type="text" name="groupname" placeholder="Group Name" required>
+        </div>
+        <div class="form-group">
+            <label for="groupicon">Group Icon</label>
+            <input type="text" name="groupicon" placeholder="Group Icon Url" required>
+        </div>
+        <div class="form-group">
+            <label for="description"> Group Description</label>
+            <input type="text" name="description" placeholder="Group Description" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-success btn-lg" value="Create">
+        </div>
+    </form>
+</div>
+
+
+<%- include('partials/footer') %>

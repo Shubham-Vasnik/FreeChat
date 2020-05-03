@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="container groups-container">
+    <h1>My Groups</h1>
+    <ul class="group-list">
+        <% groups.forEach((group)=>{%>
+        <a href="/group/<%=group._id%>">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4 card-img-div">
+                <img src="<%= group.groupIcon %>" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%= group.name %></h5>
+                  <p class="card-text"><%= group.description %>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <% }); %>
+    </ul>
+</div>
+
+<%- include('partials/footer') %>
