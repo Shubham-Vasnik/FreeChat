@@ -1,0 +1,21 @@
+{
+   "name" : "Free Chat",
+   "short_name" : "FreeChat",
+   "start_url" : "/groups",
+   "display" : "standalone",
+   "background_color" : "#292b2c",
+   "theme_color" : "#292b2c",
+   "orientation" : "portrait-primary",
+   "icons" : [
+       {
+           "src":"/imgs/free.png",
+           "type":"image/png",
+           "sizes" : "512x512"
+       },
+       {
+        "src":"/imgs/free192x192.png",
+        "type":"image/png",
+        "sizes" : "192x192"
+    }
+   ]
+}
