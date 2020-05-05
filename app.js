@@ -112,7 +112,7 @@ app.get("/logout", (req,res)=>{
 });
 
 app.get("/guest",(req,res)=>{
-    const id = "5eb1729961426038506ccef7";
+    const id = "5eb1770ac9a6980017c842c0";
     User.findById(id,(err,user)=>{
         if(err){
             console.log(err);
