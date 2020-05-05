@@ -1,3 +1,4 @@
+// Imports
 const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
@@ -11,6 +12,8 @@ const moment = require('moment');
 const User = require('./models/users');
 const Group = require('./models/groups');
 const Message = require('./models/messages');
+
+// Setup
 
 const PORT = process.env.PORT || 3000;
 
@@ -48,6 +51,9 @@ const isLoggedIn = (req,res,next) => {
     }
     res.redirect("/login");
 }
+
+
+// Routes
 
 app.get("/", function (req,res) {
     res.render('home');
@@ -277,6 +283,8 @@ app.get("/group/:id/leave",isLoggedIn,(req,res)=>{
                 }
             });
     });
+
+//  Socket.io setup   
 
 io.on('connection',socket => {
     console.log("New WS Connection....");
