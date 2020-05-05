@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 const server = http.createServer(app);
 // mongoose.connect('mongodb://localhost:27017/freechat', {useUnifiedTopology: true,useNewUrlParser: true});
-mongoose.connect('mongodb+srv://Shubham:adminpassword1234@freechat-44zpp.mongodb.net/test?retryWrites=true&w=majority', {useUnifiedTopology: true,useNewUrlParser: true});
+mongoose.connect('mongodb+srv://Shubham:adminpassword1234@freechat-44zpp.mongodb.net/test?retryWrites=true&w=majority/freechat', {useUnifiedTopology: true,useNewUrlParser: true});
 const io = socketio(server);
 app.use(require("express-session")({
     secret:"Hi There Whats Up",
